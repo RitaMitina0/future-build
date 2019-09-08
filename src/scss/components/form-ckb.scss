@@ -1,0 +1,34 @@
+.form__ckb{
+  display: none;
+
+}
+
+.form__ckb-visible{
+  width: 23px;
+    height: 16px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+   
+background-color: #FC9B09;
+border-radius: 2px;
+
+&:after{
+  content: "";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 9px;
+    color: #FFF;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    opacity: 0;
+    top: 20%;
+    left: 20%;
+}
+}
+
+.form__ckb:checked + .form__ckb-visible:after {
+  opacity: 1;
+}

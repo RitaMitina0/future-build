@@ -1,0 +1,13 @@
+mixin rating(mod)
+  div(class = "rating " + mod)
+    .rating__title
+      .rating__icon
+        img(src="../img/svg/cup.svg").rating-img
+      span.rating__text Более  <b>   50   </b>  отзывов с оценкой
+    .rating_stars
+      - var n = 0;
+      ul.rating_stars__list
+        while n < 6
+          - n++
+          li.rating_stars__item
+            img(src="../img/svg/star.svg").rating__star-icon

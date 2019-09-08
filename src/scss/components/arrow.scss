@@ -1,0 +1,23 @@
+.arrow{
+  width: 2.5px;
+  height: 10px;
+  background-color:  #C7C7C7;
+  position: relative;
+  transform: rotate(45deg);
+  margin-left: 10px;
+
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.5px;
+    height: 10px;
+    background-color: #C7C7C7;
+    background-color: #C7C7C7;
+    transform: rotate(90deg);
+    bottom: -4px;
+    right: 4px;
+  }
+
+}

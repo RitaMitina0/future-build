@@ -1,0 +1,47 @@
+.rating{
+  display:flex;
+  border-top: 0.5px solid #C7C7C7;
+  border-bottom: 0.5px solid #C7C7C7;
+  padding: rem(16px) 0;
+  align-items: center;
+  @include tablets{
+    width:100%;
+    flex-direction: column;
+  }
+  &_stars__list{
+    display: inline-flex;
+  }
+
+  &_stars__item{
+    margin-left: 7px;
+  }
+
+  &--border-none{
+    border:none;
+    padding: rem(20px) rem(30px);
+  }
+
+  &--size{
+  width:50%;
+  @include tablets{
+    width:100%;
+    flex-direction: column;
+    }
+  }
+
+  &--margin{
+    @include phones{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.rating__icon{
+  @include phones{
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 10px;
+  }
+}
+
+

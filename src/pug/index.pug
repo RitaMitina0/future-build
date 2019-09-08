@@ -1,0 +1,233 @@
+extends layout/base
+include .\objects\rating.pug
+include .\objects\form.pug
+
+block page-title
+  title Тестовое задание
+
+block page-content
+  main.main-content
+    //-
+      Секция Баннер 
+
+    section.section.banner
+      .container
+        .banner__centered
+          h1.page__title Эксклюзивная <span> фотосессия </span> при полете 
+                | на вертолете
+          .cost__block
+            .cost 
+              span.cost__title Стоимость:
+              span.cost-sum 1500
+            .percent
+              span.percent-symbol %
+          button.reservation__button Забронировать место
+          
+          //-
+            Секция описания и фотографий
+    section.section.photoshoot
+      .container
+        .desc__block-up
+          .desc__block-up_left
+            h2.section__title.subtitle--size_adaptive Фотосессия в вертолете
+            p.section__desc Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+            .service_description
+              ul.service_description__list
+                li.service_description__item
+                  img(src="../img/svg/clock.svg").service_description__img
+                  span 3 часа съемки
+                li.service_description__item
+                  img(src="../img/svg/photo.svg").service_description__img
+                  span Более 50 фотографий
+                li.service_description__item
+                  img(src="../img/svg/marker.svg").service_description__img
+                  span Москва
+                li.service_description__item
+                  img(src="../img/svg/msg.svg").service_description__img
+                  span Готовы ответить на любые вопросы
+          .desc__block-up_right
+            .player__block
+              #yt-player
+              .player
+                .player__bg
+                  img(src="../img/first.png", alt="фоновое изображение видео").player-img
+                .player__control
+                  button.player__start
+                    .start__icon
+        
+        +rating('rating--size rating--margin')
+        .photos
+          h3.subtitle.subtitle.subtitle--size_adaptive Фотографии пакета:
+          .photos__content
+            ul.photos__list.single-item
+              li.photos__item.item
+                img(src="../img/gallery/gallery1.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery2.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery3.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery4.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery3.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery4.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery2.png").photos-img
+              li.photos__item.item
+                img(src="../img/gallery/gallery3.png").photos-img
+            .add__button 
+              .arrow   
+              button(type = "submit").add-photo__btn Показать все фото
+              .arrow
+    section.section.about
+      .container
+        .about__union
+          .about_left
+            .about__desc
+              h3.subtitle.subtitle--size Об организаторе: 
+              p.about__text Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах.
+              p.about__text Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…             
+              .about__text_more
+                .about__text-all
+                  p.about__text.about__text--all Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…             Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…             
+                a(href="#" ).more__link Читать еще
+                  .arrow
+                //-ДОБАВИТЬ ЧИТАТЬ ЕЩЕ
+            .about__desc
+              h3.subtitle.subtitle--size Что я предоставлю: 
+              p.about__text Встречу вас на машине после длительного перелёта. Качественный подбор места и локации для вашей съемки. При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае!
+              .about__text_more 
+                .about__text-all
+                  p.about__text.about__text--all  Встречу вас на машине после длительного перелёта. Качественный подбор места и локации для вашей съемки. При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае! Встречу вас на машине после длительного перелёта. Качественный подбор места и локации для вашей съемки. При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае!
+                a(href="#").more__link Читать еще
+                  .arrow
+                
+          .about_right
+            .user
+              .user__photo
+                img(src="../img/user.png" alt="фотограф").user__pht
+              span.user__name Марина Иванова
+              span.user__prof Фотограф
+              a(href="#").user__more-info.user__more-info--align Показать больше <br> информации о фотографе
+            .heart-icon
+              img(src="../img/svg/heart.svg" alt = "иконка сердечко").h-icon
+    section.section.shooting-date
+      .container
+        h3.subtitle.subtitle--margin.subtitle--size_adaptive Доступная съемка
+            |  в ближайшее время:
+        .shooting-date__block
+          .current-date__block
+            span.current-date Пятница, 14 сентября 
+            button.calendar__icon
+              .calendar__img
+                img(src="../img/svg/calendar.svg" alt = "календарь").c-icon
+          ul.available-dates__list
+            li.available-dates__item
+              .available-dates__item_text
+                span.time 15:00 - 18:00
+                span.price <b> 1500₽ </b>
+                span.comment Осталось - 1 место
+              button.select-btn Выбрать
+            li.available-dates__item
+              .available-dates__item_text
+                span.time 19:00 - 22:00
+                span.price <b> 1500₽ </b>
+                span.comment Осталось - 1 место
+              button.select-btn Выбрать
+          +rating('rating--border-none')
+          
+    section.section.map
+      .y-map#map
+        .map__union
+          .map__content
+            ul.map__content__list
+              li.map__content__item
+                span.item_number 1
+                .item_info
+                  span Где встречаемся?
+                  span Москва
+              li.map__content__item
+                span.item_number 2
+                .item_info
+                  span Время съемки
+                  span 3 часа
+              li.map__content__item
+                span.item_number 3
+                .item_info
+                  span Мест осталось
+                  span 2
+              li.map__content__item
+                .item_contact
+                  .user.user--row
+                    .user__photo.user__photo--size.user__photo--margin
+                      img(src="../img/user.png" alt="фотограф").user__pht.user__photo--size
+                    .user__info
+                      .user__name Марина Иванова
+                      .user__prof.user__prof--size Фотограф
+                      a(href="#").user__more-info Показать больше информации
+    section.section.comments
+      .container
+        h3.subtitle.subtitle--size_adaptive Отзывы: 
+        ul.comments__list
+          li.comments__item
+            article.comment
+              .user__photo.user__photo--comments-size
+                img(src="../img/comments/person1.png" alt = "комментатор").user__pht
+              .comment__data
+                span.user__name Валерия Антонова
+                span.user__prof Арт-директор
+                .comment__rating
+                  .rating_stars
+                    - var n = 0;
+                    ul.rating_stars__list
+                      while n < 6
+                        - n++
+                        li.rating_stars__item
+                          img(src="../img/svg/star.svg").rating__star-icon
+                  .rating__text
+                    .checkbox
+                    span Супер! Я бы заказала съемку снова!   
+                p.comment-text Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+                span.comment-date 27 Апреля, 2019г.
+          li.comments__item
+            article.comment
+              .user__photo.user__photo--comments-size
+                img(src="../img/comments/person2.png" alt = "комментатор").user__pht
+              .comment__data
+                span.user__name Виталий Петров
+                span.user__prof Фотограф
+                .comment__rating
+                  .rating_stars
+                    - var n = 0;
+                    ul.rating_stars__list
+                      while n < 6
+                        - n++
+                        li.rating_stars__item
+                          img(src="../img/svg/star.svg").rating__star-icon
+                  .rating__text
+                    .checkbox
+                    span Супер! Я бы заказала съемку снова!   
+                p.comment-text Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо! 
+                span.comment-date 19 Апреля, 2019г.
+          li.comments__item
+            article.comment
+                .user__photo.user__photo--comments-size
+                  img(src="../img/comments/person3.png" alt = "комментатор").user__pht
+                .comment__data
+                  span.user__name Джим Керри
+                  span.user__prof Арт-директор
+                  .comment__rating
+                    .rating_stars
+                      - var n = 0;
+                      ul.rating_stars__list
+                        while n < 6
+                          - n++
+                          li.rating_stars__item
+                            img(src="../img/svg/star.svg").rating__star-icon
+                    .rating__text
+                      .checkbox
+                      span Супер! Я бы заказала съемку снова!   
+                  p.comment-text Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+                  span.comment-date 11 Апреля, 2019г.
+            

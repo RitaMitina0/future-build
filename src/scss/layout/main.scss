@@ -1,0 +1,47 @@
+li {
+  list-style-type: none;
+ }
+ ul {
+
+  padding-left: 0; 
+  margin:0
+ }
+
+ a{
+ color: #5286EC;
+cursor: pointer;
+ font-family: "Montserrat-Regular";
+ text-decoration: none;
+ }
+.clearfix {
+  @include clearfix;
+}
+
+.container {
+  @include clearfix;
+
+}
+.section{
+  font-family: "Montserrat-Regular",Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+  width: 100%;
+  height:100%;
+  max-width: 940px;
+  margin: 0 auto;
+  font-family: "Montserrat-Regular",Arial, Helvetica, sans-serif;
+
+    @include tablets{
+      padding: 0 15px;
+      // margin: 0 rem(15px);
+    }
+  
+}
+
+.wrapper{
+  position: relative;
+  overflow: auto;
+}
+

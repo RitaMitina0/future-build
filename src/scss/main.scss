@@ -1,0 +1,42 @@
+/* Vendors */
+@import "~normalize.css";
+@import "./objects/media";
+
+/* Setup */
+@import "./settings/main";
+
+/* Mixins */
+@import "./utilities/mixins";
+
+/* Base styles */
+@import "./base/elements";
+
+/* Layout */
+@import "./layout/main";
+
+/* Objects */
+@import "./objects/typography";
+@import "./objects/buttons";
+@import "./objects/header";
+@import "./objects/footer";
+
+/* Components */
+@import "./components/banner";
+@import "./components/cost-block";
+@import "./components/contacts";
+@import "./components/desc-block";
+@import "./components/service-desc";
+@import "./components/rating";
+@import "./components/about";
+@import "./components/user";
+@import "./components/shooting-date";
+@import "./components/calendar";
+@import "./components/map";
+@import "./components/comments";
+@import "./components/social";
+@import "./components/arrow";
+@import "./components/payments";
+@import "./components/photos";
+@import "./components/player";
+@import "./components/form";
+@import "./components/form-ckb";

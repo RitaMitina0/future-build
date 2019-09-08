@@ -1,0 +1,52 @@
+.photos__list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include phones{
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
+
+.photos__item{
+  width: 24%;
+  margin-right: rem(12px);
+  margin-bottom: rem(12px);
+
+  &:nth-child(4n+4){
+    margin: 0;
+  }
+  @include tablets{
+    width: 30%;
+    &:nth-child(3n+3){
+      margin: 0;
+    }
+    &:nth-child(4n+4){
+    margin-right: rem(12px);
+    margin-bottom: rem(12px);
+    }
+  }
+  @include phones{
+    width: 100%;
+    &:nth-child(4n+4){
+      margin-right: rem(12px);
+      margin-bottom: rem(12px);
+    }
+
+    & img{
+      min-width: 100%;
+    }
+  }
+}
+
+.photos{
+border-bottom: 0.5px solid #C7C7C7;
+
+@include phones{
+  border: none;
+}
+&__content{
+margin-bottom: rem(37px);
+}
+}

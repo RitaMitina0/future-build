@@ -1,0 +1,33 @@
+.footer{
+  // height: 200px;
+}
+.language{
+  display: flex;
+  align-items: center;
+}
+
+.footer__content{
+  display: flex;
+  height: 100%;
+  &--position{
+    justify-content: space-between;
+    align-items: center;
+ }
+}
+.footer-up{
+  height: rem(100px);
+}
+
+.footer-down{
+  height: rem(77px);
+  background-color: #FAF9F8; 
+}
+
+.footnote{
+  margin: 0 auto;
+
+  @include phones{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,30 @@
+.desc__block-up{
+  display: flex;
+  margin-top: rem(70px);
+  @include phones{
+    flex-direction: column-reverse;
+    font-size: 14px;
+  }
+}
+
+.desc__block-up_left{
+  max-width:50%;
+  @include phones{
+    min-width: 100%;
+  }
+}
+
+
+.service_description__item{
+  display:flex;
+  align-items:center;
+  margin-top:19px;
+  & span{
+    margin-left:10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+.service_description__item{
+  margin-bottom: rem(30px);
+}

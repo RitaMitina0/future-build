@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+font-family: "Montserrat-Regular",Arial, Helvetica, sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Regular",Arial, Helvetica;
+
+  font-weight: 700;
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.page__title{
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  & span{
+    color: #FC9B09;
+  }
+
+  @include phones{
+    font-size: 32px;
+  }
+}
+
+.section__title{
+  font-weight: 500;
+font-size: 40px;
+line-height: 49px;
+
+@include phones{
+  font-size: 28px;
+  text-align: center;
+}
+
+}
+
+.rating__title{
+  display:flex; 
+  align-items: center;  
+  @include phones{
+    position: relative;
+  
+}
+  & span{
+    margin-left:rem(12px);
+    font-size: 18px;
+      @include phones{
+        position: relative;
+      font-size: 14px;
+      
+    }
+  }
+}
+
+.subtitle{
+  font-size: 20px;
+  @include phones{
+    text-align: center;
+    font-size: 28px;
+  }
+
+  &--size{
+    font-weight: bold;
+    font-size: 18px;
+    @include phones{
+      font-size: 18px;
+      color:#37373F;
+      text-align: left;
+    }
+  
+  }
+  &--size_adaptive{
+    @include tablets{
+      font-size: 28px;
+      text-align: center;
+      color: #37373F;
+    }
+  }
+
+  &--margin{
+    margin:  rem(50px) 0 rem(30px) 0;
+  }
+
+}
+
+.location{
+  color:#5286EC;
+}

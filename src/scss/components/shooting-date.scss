@@ -1,0 +1,33 @@
+.shooting-date__block{
+  border: 1px solid #C7C7C7;
+  margin-bottom: rem(82px);
+  max-width: rem(770px);
+
+}
+
+.current-date__block{
+  display:flex;
+  align-items: center;
+  & span{
+    padding: rem(20px) rem(30px);
+
+  }
+}
+
+
+
+.available-dates__item{
+display: flex;
+    justify-content: space-between;
+    border-top: 0.5px solid #C7C7C7;
+
+    &_text{
+      display:flex;
+      flex-direction:column;
+      padding: rem(20px) rem(30px);
+      & span{
+        margin:rem(10px) 0;
+      }
+
+    }
+}

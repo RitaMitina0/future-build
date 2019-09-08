@@ -1,0 +1,45 @@
+mixin form()
+  div.overlay
+    .overlay__content
+      .overlay__content__header
+        .overlay__close
+          .close__btn
+        span.overlay__title Бронирование
+      form.order__form
+        .form__content
+          .form__item
+            label.form__block
+              span.form__block-title Дата <span> * </span> 
+              input(type="text"  required value="14.09.2019").form-input  
+          .form__item
+            label.form__block
+              span.form__block-title Email <span> * </span> 
+              input(type="text" value="" placeholder="Электронная почта" required).form-input
+          .form__item
+            label.form__block
+              span.form__block-title Имя <span> * </span> 
+              input(type="text"  required value="Иван").form-input 
+          .form__item
+            label.form__block
+              span.form__block-title Фамилия <span> * </span> 
+              input(type="text"  required value="Громов" ).form-input 
+          .form__item
+            label.form__block
+              span.form__block-title Телефон <span> * </span> 
+              input(type="text" value="" placeholder = "+7 (906) 184-81-40" required).form-input#phone
+          .form__item
+            label.form__block
+              span.form__block-title Данные карты <span> * </span> 
+              input(type="text" value="" placeholder="Номер карты" maxlength="16" required).form-input#card-numder
+          .form__item
+            .form__input-union
+              input(type="text" value="" placeholder="Срок действия" required).form-input.form-input--width
+              input(type="text" value="" placeholder="CVV" required).form-input.form-input--width
+          
+          label.form__block.form__block--checkbox
+            input(type="checkbox").form__ckb
+            .form__ckb-visible
+            span.form__ckb-title Я согласен с пользовательским соглашением и публичной офертой
+          .form__button
+            button(type="submit" action="#").send-btn Забронировать
+      

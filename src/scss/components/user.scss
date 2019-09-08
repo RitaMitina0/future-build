@@ -1,0 +1,71 @@
+.user{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top:rem(30px);
+  margin-bottom: rem(25px);
+
+  & span{
+    margin-bottom:7px;
+  }
+
+  &--row{
+    flex-direction: row;
+  }
+}
+
+.user__photo{
+  width: 139px;
+  height: 139px;
+  border-radius:50%;
+  margin-bottom:23px;
+
+
+}
+
+.user__photo--comments-size{
+  min-width: rem(101px);
+ min-height: rem(101px);
+
+ @include phones{
+  height: auto;
+}
+}
+.user__photo--size{
+  width: 67px;
+  height: 67px;
+  margin-bottom:0;
+}
+.user__photo--margin{
+  margin-right: 15px;
+}
+.user__name{
+  font-weight: 500;
+font-size: 18px;
+}
+
+.user__prof{
+  font-size: 14px;
+
+  &--size{
+    font-size: 16px;
+  }
+}
+
+.user__more-info{
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #5286EC;
+  outline: none;
+  border: none;
+  background: transparent;
+
+  @include tablets{
+    text-align: left;
+  }
+
+  &--align{
+    text-align: center;
+  }
+}

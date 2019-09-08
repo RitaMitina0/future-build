@@ -1,0 +1,13 @@
+.social{
+  display: flex;
+
+  &__list{
+  display: flex;
+  }
+
+  &__item{
+    width: 25px;
+    height: 25px;
+    margin-right: rem(30px);
+  }
+}

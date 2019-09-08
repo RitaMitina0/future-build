@@ -1,0 +1,75 @@
+.comment__data{
+  border-bottom: 0.5px solid #C7C7C7;
+}
+
+.comment{
+  display: flex;
+
+  @include phones{
+    flex-direction: column;
+  }
+}
+.comments__list{
+  width: 65%;
+  @include phones{
+    width: 100%;
+  }
+}
+
+.comments__item{
+  margin: rem(30px) 0;
+}
+.comment__rating{
+  display: flex;
+  @include phones{
+    flex-direction: column;
+  }
+}
+.rating__text{
+  display: flex;
+  margin-left: rem(50px);
+
+  @include phones{
+    margin-left: 0;
+  }
+  & span{
+    font-size: 14px;
+    color: #B3B3B3;
+
+  }
+}
+.comment__rating{
+  margin-bottom: rem(20px);
+}
+.comment__data{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox{
+  width: 2.5px;
+  height: 20px;
+  background-color: #6AAD4A;
+  position: relative;
+  transform: rotate(35deg);
+  margin-right: 5px;
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2.5px;
+    height: 9px;
+    background-color: #6AAD4A;
+    transform: rotate(96deg);
+    bottom: -3px;
+    right: 3px;
+  }
+
+}
+
+.comment-date{
+  font-size: 14px;
+  color: #B3B3B3;
+  margin: rem(20px) 0 rem(12px) 0;
+}

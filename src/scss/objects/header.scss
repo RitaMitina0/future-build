@@ -1,0 +1,33 @@
+
+
+.header__content
+{
+  height: rem(100px);
+  display: flex;
+  align-items: center;
+  @include tablets{
+    justify-content: space-between;
+  }
+}
+
+.phone-number{
+  font-family: "Montserrat-Regular",Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height: 17px;
+color: #37373F;
+}
+
+
+.header__contacts{
+  @include tablets{
+    display: none;
+  }
+}
+
+.header__auth, .location{
+  display: none;
+
+  @include tablets{
+    display: block;
+  }
+}
