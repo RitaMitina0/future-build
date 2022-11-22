@@ -49,7 +49,7 @@
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.6.0",
     "babel-runtime": "^6.22.0",
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^1.1.4",
     "cross-env": "^5.0.0",
     "css-loader": "^0.28.0",
